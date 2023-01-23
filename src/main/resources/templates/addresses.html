@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+  <title>Adresses</title>
+  <meta http-equiv="Content-Type" content="text/html ; charset=UTF-8" />
+  </head>
+<link rel="stylesheet" href="addresses.css">
+<body>
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<h1>Les differentes adresses</h1>
+
+<a href="http://localhost:8090/greeting">Accédez à greeting</a>
+<a href="http://localhost:8090/addresses">Accédez à addresses</a>
+<a href="http://localhost:8090/addresse">Accédez à addresse</a>
+<ul th:each="address:${allAddresses}">
+  <li>
+    <a th:text="${address.content}" ></a>
+    <a th:text="${address.auteur}" ></a>
+  </li>
+
+
+</ul>
+</body>
+</html>

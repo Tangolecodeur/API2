@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Meteo</title>
+
+  <meta http-equiv="Content-Type" content="text/html ; charset=UTF-8" />
+
+</head>
+<body>
+<link th:href="@{/css/styles.css}" rel="stylesheet">
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<p> Bienvenue sur la page de météo </p>
+<a href="http://localhost:8090/greeting">Accédez à greeting</a>
+<a href="http://localhost:8090/addresses">Accédez à addresses</a>
+<a href="http://localhost:8090/addresse">Accédez à addresse</a>
+
+<a th:text="${add}" ></a>
+</body>
+</html>
